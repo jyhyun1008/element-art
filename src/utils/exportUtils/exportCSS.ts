@@ -17,8 +17,8 @@ function mutateCssText(css: string): string {
     const sansFont = `"Galmuri11", -apple-system, BlinkMacSystemFont, avenir next,
             avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif`;
     return css
-        .replace(/font-family: ?(Galmuri|'Galmuri'|"Galmuri")/g, `font-family: ${sansFont}`)
-        .replace(/--cpd-font-family-sans: ?(Galmuri|'Galmuri'|"Galmuri")/g, `--cpd-font-family-sans: ${sansFont}`)
+        .replace(/font-family: ?(Galmuri11|'Galmuri11'|"Galmuri11")/g, `font-family: ${sansFont}`)
+        .replace(/--cpd-font-family-sans: ?(Galmuri11|'Galmuri11'|"Galmuri11")/g, `--cpd-font-family-sans: ${sansFont}`)
         .replace(
             /font-family: ?Inconsolata/g,
             "font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace",
