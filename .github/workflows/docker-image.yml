@@ -26,11 +26,11 @@ jobs:
       # 3. Docker 이미지 빌드 및 태그 지정
       - name: Build and tag the Docker image
         run: |
-          docker build . --file Dockerfile --tag ${{ secrets.DOCKER_USERNAME }}/my-image-name:latest
-          docker tag ${{ secrets.DOCKER_USERNAME }}/my-image-name:latest ${{ secrets.DOCKER_USERNAME }}/my-image-name:$(date +%s)
+          docker build . --file Dockerfile --tag ${{ secrets.DOCKER_USERNAME }}/elementart:latest
+          docker tag ${{ secrets.DOCKER_USERNAME }}/elementart:latest ${{ secrets.DOCKER_USERNAME }}/elementart:$(date +%s)
 
       # 4. Docker 이미지 푸시
       - name: Push Docker image to Docker Hub
         run: |
-          docker push ${{ secrets.DOCKER_USERNAME }}/my-image-name:latest
-          docker push ${{ secrets.DOCKER_USERNAME }}/my-image-name:$(date +%s)
+          docker push ${{ secrets.DOCKER_USERNAME }}/elementart:latest
+          docker push ${{ secrets.DOCKER_USERNAME }}/elementart:$(date +%s)
