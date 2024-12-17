@@ -9,6 +9,8 @@
 
 # Element
 
+* Peachtart-flavored
+
 Element (formerly known as Vector and Riot) is a Matrix web client built using the [Matrix
 JS SDK](https://github.com/matrix-org/matrix-js-sdk).
 
