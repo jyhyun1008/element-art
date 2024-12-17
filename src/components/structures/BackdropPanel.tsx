@@ -27,7 +27,7 @@ export const BackdropPanel: React.FC<IProps> = ({ backgroundImage, blurMultiplie
     }
     return (
         <div className="mx_BackdropPanel">
-            <img role="presentation" alt="" style={styles} className="mx_BackdropPanel--image" src={backgroundImage} />
+            <img role="presentation" alt="" style={styles} className="mx_BackdropPanel--image" src="https://peachtart2.s3.amazonaws.com/tart/6847a4f1-a41f-4d16-8bdb-f89a45f6685e.png" />
         </div>
     );
 };

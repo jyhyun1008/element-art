@@ -38,19 +38,22 @@ e.g. in config.json:
                 "fonts": {
                     "faces": [
                         {
-                            "font-family": "Inter",
-                            "src": [{"url": "/fonts/Inter.ttf", "format": "ttf"}]
+                            "font-family": "Galmuri11",
+                            "src": [{"url": "https://fastly.jsdelivr.net/npm/galmuri@latest/dist/Galmuri11.woff2", "format": "woff2", "weight": "400"}]
+                        }, {
+                            "font-family": "Galmuri11",
+                            "src": [{"url": "https://fastly.jsdelivr.net/npm/galmuri@latest/dist/Galmuri11-Bold.woff2", "format": "woff2", "weight": "700"}]
                         }
                     ],
-                    "general": "Inter, sans",
+                    "general": "'Galmuri11', sans",
                     "monospace": "'Courier New'"
                 },
                 "colors": {
-                    "accent-color": "#3596fc",
-                    "primary-color": "#368bd6",
+                    "accent-color": "#ff9899",
+                    "primary-color": "#ff9899",
                     "warning-color": "#ff4b55",
                     "sidebar-color": "#27303a",
-                    "roomlist-background-color": "#f3f8fd",
+                    "roomlist-background-color": "#fdf3f3",
                     "roomlist-text-color": "#2e2f32",
                     "roomlist-text-secondary-color": "#61708b",
                     "roomlist-highlights-color": "#ffffff",
@@ -58,7 +61,7 @@ e.g. in config.json:
                     "timeline-background-color": "#ffffff",
                     "timeline-text-color": "#2e2f32",
                     "timeline-text-secondary-color": "#61708b",
-                    "timeline-highlights-color": "#f3f8fd",
+                    "timeline-highlights-color": "#fdf3f3",
 
                     // These should both be 8 values long
                     "username-colors": ["#ff0000", /*...*/],
@@ -66,14 +69,14 @@ e.g. in config.json:
                 },
                 "compound": {
                     "--cpd-color-icon-accent-tertiary": "var(--cpd-color-blue-800)",
-                    "--cpd-color-text-action-accent": "var(--cpd-color-blue-900)"
+                    "--cpd-color-text-action-accent": "#ff9899"
                 }
             }, {
                 "name": "Deep Purple",
                 "is_dark": true,
                 "colors": {
                     "accent-color": "#6503b3",
-                    "primary-color": "#368bd6",
+                    "primary-color": "#f25a73",
                     "warning-color": "#b30356",
                     "sidebar-color": "#15171B",
                     "roomlist-background-color": "#22262E",

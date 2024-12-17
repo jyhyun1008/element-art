@@ -10,7 +10,7 @@
 /* Noto Color Emoji contains digits, in fixed-width, therefore causing
    digits in flowed text to stand out.
    TODO: Consider putting all emoji fonts to the end rather than the front. */
-$font-family: "Inter", var(--emoji-font-family), "Apple Color Emoji", "Segoe UI Emoji", "Arial", "Helvetica", sans-serif,
+$font-family: "Galmuri11", var(--emoji-font-family), "Apple Color Emoji", "Segoe UI Emoji", "Arial", "Helvetica", sans-serif,
     "Noto Color Emoji";
 
 $monospace-font-family: "Inconsolata", var(--emoji-font-family), "Apple Color Emoji", "Segoe UI Emoji", "Courier",
@@ -34,7 +34,7 @@ $panel-actions: var(--cpd-color-alpha-gray-300);
 
 $separator: var(--cpd-color-gray-400);
 
-$accent: var(--cpd-color-text-action-accent);
+$accent: #ff9899;
 $alert: var(--cpd-color-text-critical-primary);
 $links: var(--cpd-color-text-link-external);
 $link-external: var(--cpd-color-text-link-external);
@@ -57,20 +57,20 @@ $username-variant6-color: var(--cpd-color-text-decorative-6);
  * To use under very rare circumstances, always prefer the semantics defined
  * in https://compound.element.io/?path=/docs/tokens-semantic-colors--docs
  */
-$accent-100: var(--cpd-color-green-100);
-$accent-200: var(--cpd-color-green-200);
-$accent-300: var(--cpd-color-green-300);
-$accent-400: var(--cpd-color-green-400);
-$accent-500: var(--cpd-color-green-500);
-$accent-600: var(--cpd-color-green-600);
-$accent-700: var(--cpd-color-green-700);
-$accent-800: var(--cpd-color-green-800);
-$accent-900: var(--cpd-color-green-900);
-$accent-1000: var(--cpd-color-green-1000);
-$accent-1100: var(--cpd-color-green-1100);
-$accent-1200: var(--cpd-color-green-1200);
-$accent-1300: var(--cpd-color-green-1300);
-$accent-1400: var(--cpd-color-green-1400);
+$accent-100: var(--cpd-color-pink-100);
+$accent-200: var(--cpd-color-pink-200);
+$accent-300: var(--cpd-color-pink-300);
+$accent-400: var(--cpd-color-pink-400);
+$accent-500: var(--cpd-color-pink-500);
+$accent-600: var(--cpd-color-pink-600);
+$accent-700: var(--cpd-color-pink-700);
+$accent-800: var(--cpd-color-pink-800);
+$accent-900: var(--cpd-color-pink-900);
+$accent-1000: var(--cpd-color-pink-1000);
+$accent-1100: var(--cpd-color-pink-1100);
+$accent-1200: var(--cpd-color-pink-1200);
+$accent-1300: var(--cpd-color-pink-1300);
+$accent-1400: var(--cpd-color-pink-1400);
 
 /* Reused Figma non-compound colors */
 /* ******************** */
@@ -81,7 +81,7 @@ $header-panel-bg-hover: var(--cpd-color-gray-200);
 
 /* Theme specific colors */
 /* ******************** */
-$icon-button-color: var(--cpd-color-icon-tertiary);
+$icon-button-color: #ff9899;
 /* ******************** */
 
 /* Colors that aren't in Figma and are theme specific - we need to get rid of these */
@@ -148,7 +148,7 @@ $settings-subsection-fg-color: $muted-fg-color;
 
 /* Room */
 /* ******************** */
-$room-icon-unread-color: var(--cpd-color-icon-tertiary);
+$room-icon-unread-color: #ff9899;
 /* ******************** */
 
 /* RoomHeader */
@@ -213,7 +213,7 @@ $roomtile-default-badge-bg-color: var(--cpd-color-icon-secondary);
 /* ******************** */
 $e2e-verified-color: var(--cpd-color-icon-success-primary);
 $e2e-warning-color: var(--cpd-color-icon-critical-primary);
-$e2e-verified-color-light: var(--cpd-color-green-300);
+$e2e-verified-color-light: var(--cpd-color-pink-300);
 $e2e-warning-color-light: var(--cpd-color-red-300);
 /* ******************** */
 
@@ -275,7 +275,7 @@ $voice-record-icon-color: $tertiary-content;
 
 /* Bubble tiles */
 /* ******************** */
-$eventbubble-self-bg: var(--cpd-color-green-300);
+$eventbubble-self-bg: var(--cpd-color-pink-300);
 $eventbubble-others-bg: var(--cpd-color-gray-300);
 $eventbubble-bg-hover: var(--cpd-color-bg-subtle-secondary);
 /* ******************** */
@@ -369,11 +369,15 @@ body {
 /* diff highlight colors */
 /* ******************** */
 .hljs-addition {
-    background: var(--cpd-color-green-500);
+    background: var(--cpd-color-pink-500);
 }
 
 .hljs-deletion {
     background: var(--cpd-color-red-500);
+}
+
+._indicator-icon_133tf_26 {
+    color: #ff9899 !important;
 }
 
 /* ******************** */

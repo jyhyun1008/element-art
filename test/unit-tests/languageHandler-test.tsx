@@ -172,7 +172,7 @@ describe("languageHandler", () => {
                 {
                     en: "en_EN.json",
                     de: "de_DE.json",
-                    qq: "qq.json",
+                    ko: "ko_KR.json",
                 },
                 { overwriteRoutes: true },
             );
@@ -189,9 +189,9 @@ describe("languageHandler", () => {
                     "value": "de",
                   },
                   {
-                    "label": "qq",
-                    "labelInTargetLanguage": "qq",
-                    "value": "qq",
+                    "label": "Korean",
+                    "labelInTargetLanguage": "한국어",
+                    "value": "ko",
                   },
                 ]
             `);

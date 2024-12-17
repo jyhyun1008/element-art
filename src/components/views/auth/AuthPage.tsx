@@ -20,7 +20,7 @@ export default class AuthPage extends React.PureComponent<React.PropsWithChildre
         if (AuthPage.welcomeBackgroundUrl) return AuthPage.welcomeBackgroundUrl;
 
         const brandingConfig = SdkConfig.getObject("branding");
-        AuthPage.welcomeBackgroundUrl = "themes/element/img/backgrounds/lake.jpg";
+        AuthPage.welcomeBackgroundUrl = "https://peachtart2.s3.amazonaws.com/tart/6847a4f1-a41f-4d16-8bdb-f89a45f6685e.png";
 
         const configuredUrl = brandingConfig?.get("welcome_background_url");
         if (configuredUrl) {
